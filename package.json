@@ -1,0 +1,10 @@
+{
+  "name": "sample-addon",
+  "version": "0.0.0",
+  "keywords": [
+    "ember-addon"
+  ],
+  "ember-addon": {
+    "main": "lib/sample-addon.js"
+  }
+}
