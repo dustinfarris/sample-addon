@@ -6,6 +6,7 @@ export default {
 
     var myEnvironment = app.get('MY_ENVIRONMENT');
 
-    app.inject('controller', 'myEnvironment', myEnvironment);
+    app.register('sampleAddon:myEnvironment', myEnvironment, { instantiate: false });
+    app.inject('component', 'myEnvironment', 'sampleAddon:myEnvironment');
   }
 };
